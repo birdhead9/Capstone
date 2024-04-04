@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body %}
+
+<h1>wesley</h1>
+<h2>Search Results</h2>
+{% if results %}
+    <ul>
+    {% for result in results %}
+        <li>{{ result }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No results found. {{ city }}</p>
+{% endif %}
+{% endblock %}

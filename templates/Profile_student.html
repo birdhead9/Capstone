@@ -1,0 +1,278 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Student Profile</title>
+
+{% endblock %}
+
+
+
+{% block body %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile</title>
+    <!-- Include your CSS files, JavaScript, and other dependencies here -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <link rel="icon" type="image/x-icon" href="nightJar.ico">
+</head>
+
+<body>
+
+<header>
+    <h1>CollegePathFinder</h1>
+</header>
+
+<h2>Student Profile</h2>
+<!-- Add PM profile information and navigation links -->
+<div class="user-profile">
+    <!-- User's profile picture -->
+    <img src="profile_picture.jpg" alt="Profile Picture">
+</div>
+
+<div class="content">
+    <form method="POST" action=" {{url_for('views.studentDash')}}">
+        
+        <p>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" placeholder="Enter First Name">
+        </p>
+
+        <p>
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Enter Last Name">
+        </p>
+
+        <p>
+            <label for="phone_number">Phone Number</label>
+            <input type="int" id="phone_number" name="phone_number" placeholder="Enter Phone Number">
+        </p>
+
+        <p>
+            <label for ="state">State</label>
+            <select id = "state" name="state" >
+              <option value="Blank">Blank</option>
+              <option value="WA">Washington</option>
+
+            </select><br/>
+        </p>
+
+        <p>
+            <label for ="city">City</label>
+            <select id = "city" name="city" >
+              <option value="Blank">Blank</option>
+              <option value="Aberdeen">Aberdeen</option>
+              <option value="Airway Heights">Airway Heights</option>
+              <option value="Algona">Algona</option>
+              <option value="Anacortes">Anacortes</option>
+              <option value="Arlington">Arlington</option>
+              <option value="Asotin">Asotin</option>
+              <option value="Auburn">Auburn</option>
+              <option value="Bainbridge Island">Bainbridge Island</option>
+              <option value="Battle Ground">Battle Ground</option>
+              <option value="Bellevue">Bellevue</option>
+              <option value="Bellingham">Bellingham</option>
+              <option value="Benton City">Benton City</option>
+              <option value="Bingen">Bingen</option>
+              <option value="Black Diamond">Black Diamond</option>
+              <option value="Blaine">Blaine</option>
+              <option value="Bonney Lake">Bonney Lake</option>
+              <option value="Bothell">Bothell</option>
+              <option value="Bremerton">Bremerton</option>
+              <option value="Brewster">Brewster</option>
+              <option value="Bridgeport">Bridgeport</option>
+              <option value="Brier">Brier</option>
+              <option value="Buckley">Buckley</option>
+              <option value="Burien">Burien</option>
+              <option value="Burlington">Burlington</option>
+              <option value="Camas">Camas</option>
+              <option value="Carbonado">Carbonado</option>
+              <option value="Carnation">Carnation</option>
+              <option value="Cashmere">Cashmere</option>
+              <option value="Castle Rock">Castle Rock</option>
+              <option value="Centralia">Centralia</option>
+              <option value="Chehalis">Chehalis</option>
+              <option value="Chelan">Chelan</option>
+              <option value="Cheney">Cheney</option>
+              <option value="Chewelah">Chewelah</option>
+              <option value="Clarkston">Clarkston</option>
+              <option value="Cle Elum">Cle Elum</option>
+              <option value="Clyde Hill">Clyde Hill</option>
+              <option value="Colfax">Colfax</option>
+              <option value="College Place">College Place</option>
+              <option value="Colville">Colville</option>
+              <option value="Connell">Connell</option>
+              <option value="Cosmopolis">Cosmopolis</option>
+              <option value="Coulee Dam">Coulee Dam</option>
+              <option value="Coupeville">Coupeville</option>
+              <option value="Covington">Covington</option>
+              <option value="Dayton">Dayton</option>
+              <option value="Deer Park">Deer Park</option>
+              <option value="Des Moines">Des Moines</option>
+              <option value="DuPont">DuPont</option>
+              <option value="Duvall">Duvall</option>
+              <option value="East Wenatchee">East Wenatchee</option>
+              <option value="Eatonville">Eatonville</option>
+              <option value="Edgewood">Edgewood</option>
+              <option value="Edmonds">Edmonds</option>
+              <option value="Electric City">Electric City</option>
+              <option value="Ellensburg">Ellensburg</option>
+              <option value="Elma">Elma</option>
+              <option value="Entiat">Entiat</option>
+              <option value="Enumclaw">Enumclaw</option>
+              <option value="Ephrata">Ephrata</option>
+              <option value="Everett">Everett</option>
+              <option value="Everson">Everson</option>
+              <option value="Federal Way">Federal Way</option>
+              <option value="Ferndale">Ferndale</option>
+              <option value="Fife">Fife</option>
+              <option value="Fircrest">Fircrest</option>
+              <option value="Forks">Forks</option>
+              <option value="Gold Bar">Gold Bar</option>
+              <option value="Goldendale">Goldendale</option>
+              <option value="Grand Coulee">Grand Coulee</option>
+              <option value="Grandview">Grandview</option>
+              <option value="Granger">Granger</option>
+              <option value="Granite Falls">Granite Falls</option>
+              <option value="Hoquiam">Hoquiam</option>
+              <option value="Ilwaco">Ilwaco</option>
+              <option value="Issaquah">Issaquah</option>
+              <option value="Kahlotus">Kahlotus</option>
+              <option value="Kalama">Kalama</option>
+              <option value="Kelso">Kelso</option>
+              <option value="Kenmore">Kenmore</option>
+              <option value="Kennewick">Kennewick</option>
+              <option value="Kent">Kent</option>
+              <option value="Kettle Falls">Kettle Falls</option>
+              <option value="Kirkland">Kirkland</option>
+              <option value="Kittitas">Kittitas</option>
+
+            </select><br/>
+        </p>
+
+        <p>
+          <label for ="ResidencyStatus">Residency Status</label>
+          <select id = "ResidencyStatus" name="ResidencyStatus" >
+              <option value="Resident">Resident</option>
+              <option value="Non-Resident">Non-Resident</option>
+          </select><br/>
+      </p>
+      <p>
+      <label for="birthday">Select Your Birthday:</label>
+      <input type="date" id="birthday" name="birthday">
+    
+      </p>
+      
+      
+      <p>
+        <label for="desiredMajor">Choose a  Major:</label>
+        <select id="desiredMajor" name="desiredMajor">
+          <option value="Blank">Blank</option>
+          <option value="accounting">Accounting</option>
+          <option value="aerospace_engineering">Aerospace Engineering</option>
+          <option value="agricultural_science">Agricultural Science</option>
+          <option value="anthropology">Anthropology</option>
+          <option value="architecture">Architecture</option>
+          <option value="art_history">Art History</option>
+          <option value="biochemistry">Biochemistry</option>
+          <option value="biomedical_engineering">Biomedical Engineering</option>
+          <option value="business_administration">Business Administration</option>
+          <option value="chemical_engineering">Chemical Engineering</option>
+          <option value="civil_engineering">Civil Engineering</option>
+          <option value="computer_science">Computer Science</option>
+          <option value="criminal_justice">Criminal Justice</option>
+          <option value="dentistry">Dentistry</option>
+          <option value="economics">Economics</option>
+          <option value="education">Education</option>
+          <option value="electrical_engineering">Electrical Engineering</option>
+          <option value="environmental_science">Environmental Science</option>
+          <option value="finance">Finance</option>
+          <option value="graphic_design">Graphic Design</option>
+          <option value="history">History</option>
+          <option value="industrial_engineering">Industrial Engineering</option>
+          <option value="information_technology">Information Technology</option>
+          <option value="journalism">Journalism</option>
+          <option value="law">Law</option>
+          <option value="marketing">Marketing</option>
+          <option value="mechanical_engineering">Mechanical Engineering</option>
+          <option value="medicine">Medicine</option>
+          <option value="music">Music</option>
+          <option value="nursing">Nursing</option>
+          <option value="nutrition">Nutrition</option>
+          <option value="pharmacy">Pharmacy</option>
+          <option value="philosophy">Philosophy</option>
+          <option value="physics">Physics</option>
+          <option value="political_science">Political Science</option>
+          <option value="psychology">Psychology</option>
+          <option value="public_health">Public Health</option>
+          <option value="sociology">Sociology</option>
+          <option value="software_engineering">Software Engineering</option>
+          <option value="sports_management">Sports Management</option>
+          <option value="theater">Theater</option>
+          <option value="veterinary_medicine">Veterinary Medicine</option>
+          <!-- Add more majors as needed -->
+        </select>
+      </p>
+
+      <p>
+      <label for="schoolType">Choose School Type</label>
+      <select id="schoolType" name="schoolType">
+        <option value="public">Public</option>
+        <option value="private">Private</option>
+      </select>
+      </p>
+
+      <p>
+        <label for="preferredTuition">Preferred Tuition (annual)</label>
+        <select id="preferredTuition" name="preferredTuition">
+          <option value="0-$4999">0-$4999</option>
+          <option value="$5000-$9999">$5000-$9999</option>
+          <option value="$10000-$19999 ">$10000-$29999</option>
+          <option value="$30000-$49999">$30000-$49999</option>
+          <option value="above $50000">above $50000</option>
+        </select>
+      </p>
+      
+      <p>
+        <label for="AcademicInterests">Academic Interests</label>
+        <input type="text" id="AcademicInterests" name="AcademicInterests" placeholder="Enter Academic Interests here(option)">
+      </p>
+
+      <p>
+        <label for="ProgramPerferences">Program Perferences</label>
+        <input type="text" id="ProgramPerferences" name="ProgramPerferences" placeholder="Enter Program Perferences here(option)">
+      </p>
+
+
+
+      
+      <p>
+      </select>
+      <label for="graduationYear">Expect Graduation Year</label>
+      <select id="graduationYear" name="graduationYear">
+        <script>
+          for (let i = 2024; i <= 2080; i++) {
+              document.write('<option value="' + i + '">' + i + '</option>');
+          }
+      </script>
+      </select>
+      </p>
+      <button type="submit"> Submit</button>
+
+        <!-- <form action="PMDashboard.html"><input type="submit" value="Submit">
+        </form> -->
+    </form>
+
+
+</div>
+
+<footer>
+    <p>&copy; 2023 CollegePathFinder</p>
+</footer>
+
+</body>
+</html>
+
+{% endblock %}

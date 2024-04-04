@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>PM Profile</title>
+
+{% endblock %}
+
+{% block body %}
+
+<h2>Program Manager Profile</h2>
+
+<div class="content">
+    <form method="POST" action=" {{url_for('views.pmDash')}}">
+        
+        <p>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" placeholder="Enter first Name">
+        </p>
+
+        <p>
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" placeholder="Enter Last Name">
+        </p>
+
+        <p>
+            <label for="phone_number">Phone Number</label>
+            <input type="int" id="phone_number" name="phone_number" placeholder="Enter Phone Number">
+        </p>
+
+        <p>
+            <label for ="state">State</label>
+            <select id = "state" name="state" >
+                <option value="WA">WA</option>
+                
+            </select><br/><br/>
+        </p>
+
+        <p>
+            <label for ="city">City</label>
+            <select id = "city" name="city" >
+                <option value="Blank">Blank</option>
+                <option value="Aberdeen">Aberdeen</option>
+                <option value="Airway Heights">Airway Heights</option>
+                <option value="Algona">Algona</option>
+                <option value="Anacortes">Anacortes</option>
+                <option value="Arlington">Arlington</option>
+                <option value="Asotin">Asotin</option>
+                <option value="Auburn">Auburn</option>
+                <option value="Bainbridge Island">Bainbridge Island</option>
+                <option value="Battle Ground">Battle Ground</option>
+                <option value="Bellevue">Bellevue</option>
+                <option value="Bellingham">Bellingham</option>
+                <option value="Benton City">Benton City</option>
+                <option value="Bingen">Bingen</option>
+                <option value="Black Diamond">Black Diamond</option>
+                <option value="Blaine">Blaine</option>
+                <option value="Bonney Lake">Bonney Lake</option>
+                <option value="Bothell">Bothell</option>
+                <option value="Bremerton">Bremerton</option>
+                <option value="Brewster">Brewster</option>
+                <option value="Bridgeport">Bridgeport</option>
+                <option value="Brier">Brier</option>
+                <option value="Buckley">Buckley</option>
+                <option value="Burien">Burien</option>
+                <option value="Burlington">Burlington</option>
+                <option value="Camas">Camas</option>
+                <option value="Carbonado">Carbonado</option>
+                <option value="Carnation">Carnation</option>
+                <option value="Cashmere">Cashmere</option>
+                <option value="Castle Rock">Castle Rock</option>
+                <option value="Centralia">Centralia</option>
+                <option value="Chehalis">Chehalis</option>
+                <option value="Chelan">Chelan</option>
+                <option value="Cheney">Cheney</option>
+                <option value="Chewelah">Chewelah</option>
+                <option value="Clarkston">Clarkston</option>
+                <option value="Cle Elum">Cle Elum</option>
+                <option value="Clyde Hill">Clyde Hill</option>
+                <option value="Colfax">Colfax</option>
+                <option value="College Place">College Place</option>
+                <option value="Colville">Colville</option>
+                <option value="Connell">Connell</option>
+                <option value="Cosmopolis">Cosmopolis</option>
+                <option value="Coulee Dam">Coulee Dam</option>
+                <option value="Coupeville">Coupeville</option>
+                <option value="Covington">Covington</option>
+                <option value="Dayton">Dayton</option>
+                <option value="Deer Park">Deer Park</option>
+                <option value="Des Moines">Des Moines</option>
+                <option value="DuPont">DuPont</option>
+                <option value="Duvall">Duvall</option>
+                <option value="East Wenatchee">East Wenatchee</option>
+                <option value="Eatonville">Eatonville</option>
+                <option value="Edgewood">Edgewood</option>
+                <option value="Edmonds">Edmonds</option>
+                <option value="Electric City">Electric City</option>
+                <option value="Ellensburg">Ellensburg</option>
+                <option value="Elma">Elma</option>
+                <option value="Entiat">Entiat</option>
+                <option value="Enumclaw">Enumclaw</option>
+                <option value="Ephrata">Ephrata</option>
+                <option value="Everett">Everett</option>
+                <option value="Everson">Everson</option>
+                <option value="Federal Way">Federal Way</option>
+                <option value="Ferndale">Ferndale</option>
+                <option value="Fife">Fife</option>
+                <option value="Fircrest">Fircrest</option>
+                <option value="Forks">Forks</option>
+                <option value="Gold Bar">Gold Bar</option>
+                <option value="Goldendale">Goldendale</option>
+                <option value="Grand Coulee">Grand Coulee</option>
+                <option value="Grandview">Grandview</option>
+                <option value="Granger">Granger</option>
+                <option value="Granite Falls">Granite Falls</option>
+                <option value="Hoquiam">Hoquiam</option>
+                <option value="Ilwaco">Ilwaco</option>
+                <option value="Issaquah">Issaquah</option>
+                <option value="Kahlotus">Kahlotus</option>
+                <option value="Kalama">Kalama</option>
+                <option value="Kelso">Kelso</option>
+                <option value="Kenmore">Kenmore</option>
+                <option value="Kennewick">Kennewick</option>
+                <option value="Kent">Kent</option>
+                <option value="Kettle Falls">Kettle Falls</option>
+                <option value="Kirkland">Kirkland</option>
+                <option value="Kittitas">Kittitas</option>
+            </select><br/><br/>
+        </p>
+
+        <button type="submit"> Submit</button>
+    </form>
+
+
+</div>
+
+<footer>
+    <p>&copy; 2023 CollegePathFinder</p>
+</footer>
+
+</body>
+</html>
+{% endblock %}

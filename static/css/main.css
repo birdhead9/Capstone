@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align:center;
+    color:#333;
+    background-color:#f0f0f0;
+    padding: 20px;
+}
+
+.content{
+    max-width:600px;
+    margin:0 auto;
+    padding:20px;
+}
+
+form{
+    background-color:#f9f9f9;
+    padding:20px;
+    border-radius:5px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.1);
+
+}
+
+form p{
+    margin: 10px 0;
+}
+
+label{
+    font-weight: bold;
+
+}
+
+input[type="text"]{
+    width:100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius:5px;
+
+}
+
+input[type="radio"]{
+    margin-right: 5px;
+}
+
+button{
+    background-color:green;
+    color:#ccc;
+    
+}
+
+
+header {
+	
+	width:100%;
+	background-color:rgba(81, 131, 184, 0.60);
+
+
+	
+}
+
+h2{
+	
+	color:black;
+text-align: left;
+
+
+}
+p{
+	color:black;
+}
+
+h3{
+	font-size: 50px;
+	
+}
+
+
+.left {
+  background-color: lightblue;
+  width: 300px;
+  border: 15px solid slateblue;
+  padding: 50px;
+  margin: 20px;
+}
+
+
+.right {
+  background-color: lightblue;
+  width: 300px;
+  border: 15px solid slateblue;
+  padding: 50px;
+  margin: 20px;
+}
+
+
+.middle{
+	 background-color: lightblue;
+  width: 300px;
+  border: 15px solid slateblue;
+  padding: 50px;
+  margin: 20px;
+}
+
+
+
+
+
+div{
+	
+
+	color:white;
+	padding: 10 px;
+
+	
+}
+
+footer{
+	background-color:slateblue;
+	padding:10px;
+	text-align:center;
+	color:white;
+	width: 100%;
+	position:relative;
+	
+}
+button{
+	  border: solid black;
+  color: black;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+
+ul{
+	list-style-type:none;
+	margin:0;
+	padding: 0;
+	background-color:#f1f1f1;
+
+	overflow:hidden;
+	
+	
+}
+/*Makes the navigation bar horizontal*/
+li{
+
+	float:left;
+	
+}
+
+/*Makes a color when mouse is over navigation bar*/
+
+li a:hover{
+
+		background-color:#555;
+		color:white;
+}
+
+.active{
+	background-color:#04AA6D;
+	color:white;
+}
+
+.row{
+	display:flex;
+	
+}
+
+/*Style the search box*/
+#mySearch{
+	
+	
+	font-size: 18px;
+	padding:11px;
+	border: 1px solid #ddd;
+	float:right;
+	
+}
+
+#myMenu{
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	
+}
+
+#myMenu li a{
+	padding:12px;
+	text-decoration:none;
+	color:black;
+	display:block;
+	
+}
+
+/*Style the search box inside navigation bar*/
+.topnav input[type=text]{
+	float:right;
+	padding: 6px;
+	border:none;
+	margin-top:8px;
+	margin-right: 16px;
+	font-size:17px;
+}
+
+.center{
+	border: 5px solid;
+position: absolute;
+  top: 33%;
+ left: 33%;
+  transform: translate(-50%, -50%);
+   padding: 10px;
+
+}

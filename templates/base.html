@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CDN Contednt delivery network that will allow you to load without downloading css-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <!-- Include your CSS files, JavaScript, and other dependencies here -->
+   <link rel ="icon" type="image/x-icon" href="{{ url_for('static', filename='css/nightJar.ico') }}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Include Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="myScript.js"></script>
+   <strong>
+        <ul class ="menu">
+            <li><h2><a href="{{url_for('views.studentDash')}}">Student Dashboard</a></h2></li>
+            <li><h2><a href="{{url_for('views.login')}}">Login</a></h2></li>
+            <li><h2><a href="{{url_for('views.search')}}">Search</a></h2></li>
+            <li><h2><a href="{{url_for('views.signup')}}">Sign Up</a></h2></li>
+            <li><h2><a href="{{url_for('views.pmDash')}}">Access PM</a></h2></li>
+            <li><h2><a href="{{url_for('views.index')}}">Index</a></h2></li>
+        </ul>
+
+ </strong>
+   
+</head>
+
+
+<body>
+    {% block body %}{% endblock %}
+</body>
+</html>

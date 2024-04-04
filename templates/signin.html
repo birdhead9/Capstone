@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Sign In</title>
+
+{% endblock %}
+
+{% block body %}
+
+<body>
+	<form method="POST">
+		
+		<div class="form-group">
+			
+			<div style="width: 100%; height: 100%; position: relative; background: white;">
+    		<div style="width: 521px; height: 228px; left: 30px; top: 19px; position: absolute; color: rgba(26, 118, 187, 0.87); font-size: 80px; font-family: Irish Grover; font-weight: 400; word-wrap: break-word">COLLEGE<br/>PATHFINDER</div>
+
+			<!-- centers the form into the middle page-->
+			<div class="center">
+			<div style="width: 100%; height: 100%; position: relative; background: white">
+	
+			<!--field for Username-->
+	
+    		<div><input type="username" style="width: 205px; height: 55px; left: 145px; top: 23px; position: absolute; background: #D9D9D9" placeholder="Enter Username"></div>
+ 
+			<!--field for password-->
+			<div><input type="password" style="width: 205px; height: 55px; left: 145px; top: 91px; position: absolute; background: #D9D9D9" placeholder="Enter Password"></div>
+	
+			<!--styles username-->
+    		<div style="left: 28px; top: 41px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">UserName:</div>
+
+			<!--styles password-->
+   			<div style="left: 28px; top: 106px; position: absolute; color: black; font-size: 20px; font-family: Inter; font-weight: 400; word-wrap: break-word">Password:</div>
+			<!-- this styles how the submit is in the middle bottom-->
+			<div style="width: 200px; height: 23px; left: 201px; top: 173px; position: absolute; color: black; font-size: 15px; font-family: Inter; font-weight: 400; word-wrap: break-word">
+	
+			<!--this is how submit tranfers to a new page-->
+			<form action="studentDashboard.html"><input type="submit" value="Submit">
+			</form>
+	
+	
+		</div>
+	</div>
+</body>
+</div>
+</form>
+</html>
+
+
+{% endblock %}
